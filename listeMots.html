@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <link rel="stylesheet" href="css/listeMots.css">
+        <script src="js/scriptMots.js"></script>
+        <h1>Nombre de mots à traiter : <span id="nbMots"></span></h1>
+    </head>
+    <div id="hautPage"> 
+        <div id="utilisateurConnecte">Utilisateur actuellement connecté: </div><br/>
+        <div id="divPrincipal">
+            <form id="formPrincipal" method="post">
+                <div id="soumettre">
+                    <button type="button" onclick="verificationLigne(true)">Envoyer</button>
+                    <div class="tooltip">
+                        <button type="button" onclick="verificationLigne(false)">Vérifier</button>
+                        <span class="tooltiptext">Une ligne doit contenir au moins la correction OU le tag et le lemme </span>
+                    </div>    
+                </div>
+                <table id="tableauMots">
+                        <thead>
+                            <th>Mot </th>
+                            <th>Tag </th>
+                            <th>Lemme </th>
+                            <th>Correction</th>
+                            <th>Post-Traitement </th>
+                            <th>NER </th>
+                            <th>Commentaires </th>
+                            <th>Contexte</th>
+                        </thead>          
+                </table><br/>
+            </form>
+        </div>
+    </div>
+</html>

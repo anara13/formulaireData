@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentification</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script defer src="js/scriptLogin.js"></script>
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Authentification</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Identifiant invalide <span id="error-msg-second-line">et/ou mot de passe</span></p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Identifiant">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Mot de passe">
+      <input type="submit" value="Se connecter" id="login-form-submit">
+    </form>
+  
+  </main>
+</body>
+
+</html>
